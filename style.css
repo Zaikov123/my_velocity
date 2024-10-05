@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* ----- Base -----*/
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container{
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p{
+    color: #6A859C;
+    line-height: 1.7;
+}
+
+.common-section{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.common-section--dark{
+    background-color: #192024;
+    
+}
+.common-section--dark *{
+    color: #ffffff;
+}
+
+.common-section--dark .section-title > .section-title__title,
+.common-section--dark .section-title > .section-title__subtitle{
+    color: #E8E8E8;
+}
+
+/* Template for title section */
+.section-title{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    line-height: 1.2;
+}
+
+.section-title__title{
+    font-size: 30px;
+    color: #676770;
+    letter-spacing: 5px;
+    
+}
+.section-title__subtitle{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* Template for links in section */
+
+.link{
+    margin: 10px;
+    padding: 10px 31px;  
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.link:hover{
+    background-color: #AAAAAA;
+    border-color: #AAAAAA;
+}
+
+.link:active{
+    background-color: #8E8E8E;
+    border-color: #8E8E8E;
+}
+
+.link-primary{
+    margin: 10px;
+    padding: 10px 31px;  
+    border: 2px solid #69B9FF;
+    background-color: #69B9FF;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.link-primary:hover{
+    border-color: #1994FF;
+    background-color: #1994FF;
+}
+
+.link-primary:active{
+    border-color: #0055A0;
+    background-color: #0055A0;
+}
+
+/* ----- Header -----*/
+
+.header{
+    width: 100%;
+
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title{
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #69B9FF;
+    text-transform: uppercase;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar a{
+    font-size: 16px;
+    padding: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.header__navbar a:hover{
+    color: #0082F3;
+}
+
+.header__navbar a:active{
+    color: #004887;
+}
+
+/* ----- Welcome section -----*/
+
+.welcome{
+    min-height: 600px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #282936;
+    background-image: url(./resources/img/background_image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome h2{
+    letter-spacing: 4px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.welcome__links{
+    margin-top: 106px;
+}
+
+/* ----- About section -----*/
+
+.about__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 3%; */
+    gap: 20px;
+}
+
+.about__cards__card{
+    /* margin: 0 10px; */
+    
+    height: 300px;
+    /* width: 30%; */
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+}
+
+.about__cards__card__image{
+    max-width: 94px;
+    max-height: 94px;
+    margin-top: 36px;
+}
+
+.about__cards__card__title{
+    font-size: 20px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #676770;
+}
+
+.about__cards__card__subtitle{
+    margin-bottom: 23px;
+}
+
+/* ----- Services section -----*/
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services__cards__card{
+    min-width: 45%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__cards__card__image{
+    margin-bottom: 20px;
+    width: 290px;
+}
+
+.services__cards__card__title{
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.services__cards__card__subtitle{
+    margin-bottom: 20px;
+}
+
+/* ----- Tab section -----*/
+
+.tab-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabs__nav{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tabs__nav button{
+    background-color: #92A0AD;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 3px;
+
+    padding: 1px 30px;
+}
+
+button.active{
+    background-color: #2E80B6;
+}
+
+.tabs__item h4{
+    margin: 16px;
+    font-size: 31px;
+    color: #676770;
+}
+
+.tabs__item__desc{
+    margin: auto;
+    max-width: 720px;
+    text-align: center;
+}
+
+/*----- Footer -----*/
+
+/* .footer__desc{
+    max-height: 225px;
+    
+} */
+
+.footer__desc h4{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #676770;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.footer__desc a{
+    color: #668CAD;
+}
+
+.footer__desc li{
+    height: 30px;
+    position: relative;
+}
+
+.footer__desc li::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: #D5D5E0;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.footer__desc__social li::before{
+    width: calc(100% - 30px);
+}
+
+.footer__desc__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__desc__container > *{
+    width: 30%;
+}
+
+
+.footer__desc__social img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.footer__copy{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #383838;
+}
+
+@media (max-width: 700px) {
+    .footer__desc__about{
+        display: none;
+    }
+    .footer__desc__links,
+    .footer__desc__social{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title__title{
+        font-size: 20px;
+    }
+
+    .section-title__subtitle{
+        font-size: 15px;
+    }
+
+    .welcome {
+        min-height: 400px;
+    }
+    
+    .welcome h2 {
+        font-size: 40px;
+    }
+
+    .welcome__links {
+        margin-top: 86px;
+    }
+
+    .services__cards__card {
+        width: 30%;
+        margin: 0 10px;
+    }
+
+    .services__cards__card__title {
+        margin-bottom: 20px;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .services__cards__card__subtitle {
+        display: none;
+    }
+
+    .tabs__item h4{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 510px) {
+    .services__cards__card__title {
+        font-size: 13px;
+    }
+
+    .services__cards__card a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__navbar a {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+    }
+
+    .welcome__links a {
+        padding: 7px 25px;
+    }
+
+    .tabs__item__desc {
+        display: none;
+    }
+
+    .footer__desc__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__desc__container *{
+        width: 90%;
+    }
+}
+
+@media (max-width: 340px) {
+    .header__navbar a {
+        padding: 0 10px;
+    }
+}
